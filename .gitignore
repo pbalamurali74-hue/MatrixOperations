@@ -161,3 +161,7 @@ out/
 backend/*.db
 backend/__pycache__/
 edge/__pycache__/
+
+backend/
+frontend/
+edge/
