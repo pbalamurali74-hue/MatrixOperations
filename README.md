@@ -1,12 +1,18 @@
-# Matrix Operations Tool
+# 🧮 Interactive Matrix Operations Tool
 
-A clean, modular, and interactive dual-interface **Matrix Operations Tool** built with Python and NumPy. This application is designed to perform standard matrix computations with robust user input validation and error handling. It features both a modern dark-themed Desktop GUI (built using `tkinter`) and a structured, menu-driven CLI.
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org)
+[![GUI](https://img.shields.io/badge/GUI-Tkinter-brightgreen?style=for-the-badge)](https://docs.python.org/3/library/tkinter.html)
+[![Testing](https://img.shields.io/badge/Testing-Pytest%20%2F%20Unittest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](./LICENSE)
 
-*This project was developed as an **Internship Task** to demonstrate software engineering best practices, including interactive user experience, type safety, modular backend logic, and thorough test coverage.*
+A clean, modular, and interactive dual-interface **Matrix Operations Tool** built with Python and NumPy. Designed to perform standard matrix computations with robust user input validation and error handling, featuring both a modern dark-themed Desktop GUI (built using `tkinter`) and a structured, menu-driven CLI.
+
+*This project was developed as an **Internship Task** demonstrating software engineering best practices, including interactive user experience, type safety, modular backend logic, and thorough test coverage.*
 
 ---
 
-## Features
+## ⚡ Features
 
 - **Dual-Interface Mode**: Launches a desktop Graphical User Interface (GUI) by default, or runs in a console-based Command Line Interface (CLI) when using the `--cli` flag.
 - **Dynamic Dimension Binding (GUI)**:
@@ -25,7 +31,7 @@ A clean, modular, and interactive dual-interface **Matrix Operations Tool** buil
 
 ---
 
-## Supported Matrix Operations
+## 📐 Supported Matrix Operations
 
 1. **Matrix Addition ($A + B$)**: Add two matrices of matching shapes element-by-element.
 2. **Matrix Subtraction ($A - B$)**: Subtract Matrix B from Matrix A element-by-element.
@@ -39,7 +45,7 @@ A clean, modular, and interactive dual-interface **Matrix Operations Tool** buil
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 MatrixOperations/
@@ -52,55 +58,47 @@ MatrixOperations/
 
 ---
 
-## Prerequisites
+## 🛠️ Prerequisites & Installation
 
-- **Python 3.x**
+### 1. Prerequisites
+- **Python 3.8+**
 - **NumPy**
 
----
-
-## Installation
-
-1. Clone or copy the project files to your local machine.
-2. Install the dependencies using `pip`:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 2. Installation
+```bash
+git clone https://github.com/pbalamurali74-hue/MatrixOperations.git
+cd MatrixOperations
+pip install -r requirements.txt
+```
 
 ---
 
-## How to Run
+## 🚀 How to Run
 
 ### 1. Graphical User Interface (GUI) - Default
-
 Execute the program from your terminal to launch the desktop application:
-
 ```bash
 python3 matrix_operations.py
 ```
-
 *Note: If your system is headless or lacks Tkinter support, the program will automatically display a warning and fall back to the CLI mode.*
 
 ### 2. Command Line Interface (CLI)
-
 Add the `--cli` argument to run the menu-driven command-line solver inside the terminal:
-
 ```bash
 python3 matrix_operations.py --cli
 ```
 
 ---
 
-## Running Unit Tests
+## 🧪 Running Unit Tests
 
-To verify the mathematical engine and boundary validations, execute the unit test suite using the built-in `unittest` runner:
-
+To verify the mathematical engine and boundary validations, execute the unit test suite:
 ```bash
 python3 -m unittest test_matrix_operations.py
 ```
 
 Expected output:
-```
+```text
 Ran 17 tests in 0.020s
 
 OK
@@ -108,9 +106,9 @@ OK
 
 ---
 
-## Sample CLI Usage
+## 💻 Sample CLI Usage
 
-```
+```text
 ==================================================
           MATRIX OPERATIONS TOOL (CLI)
 ==================================================
@@ -147,9 +145,18 @@ Row 2: 4 5 6
 
 ---
 
-## Internship Project Highlights
+## 🌟 Internship Project Highlights
 
 - **Clean Architectural Separation**: The calculations are abstracted into pure functions in a core engine section, isolated from display logic (CLI/GUI).
 - **Defensive Programming**: Validates input dimensions for shape mismatches, filters out non-numeric values, and gracefully handles singular (non-invertible) matrix errors.
 - **Production Grade Tooling**: Built-in unit testing suite ensures functional reliability and eases future enhancement integrations.
 - **Usability Focus**: Features dynamic GUI dimensions (e.g. locking addition dimensions or multiplication constraints) which prevent users from executing invalid matrix math operations.
+
+---
+
+## 👤 Author
+
+**Purushotham Balamurali**  
+- **GitHub:** [@pbalamurali74-hue](https://github.com/pbalamurali74-hue)  
+- **LinkedIn:** [purushothambalamurali](https://www.linkedin.com/in/purushothambalamurali/)  
+- **Portfolio:** [Purushotham Balamurali Portfolio](https://github.com/pbalamurali74-hue)
